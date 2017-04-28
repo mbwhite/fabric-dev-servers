@@ -1,0 +1,26 @@
+{
+  "name": "fabric-dev-servers",
+  "version": "1.0.0",
+  "description": "Helper Scripts to start Hyperledger Fabric v0.6 and v1.0 for development/test purposes",
+  "config": {
+    "fabricversion": "hlfv0.6"
+  },
+  "scripts": {
+    "start": "echo $npm_package_config_fabricversion && ./fabric-scripts/$npm_package_config_fabricversion/start-hyperledger.sh",
+    "stop": "./fabric-scripts/$npm_package_config_fabricversion/stop-hyperledger.sh",
+    "teardown": "./fabric-scripts/$npm_package_config_fabricversion/teardown-hyperledger.sh",
+    "createComposerProfile": "./fabric-scripts/$npm_package_config_fabricversion/createProfile.sh",
+    "download": "./fabric-scripts/$npm_package_config_fabricversion/download-hyperledger.sh"
+  },
+  "author": "Hyperledger",
+  "license": "Apache-2",
+  "keywords": [
+    "Blockchain",
+    "Solutions"
+  ],
+  "dependencies": {
+    "fabric-ca-client": "1.0.0-alpha.0",
+    "fabric-client": "1.0.0-alpha",
+    "homedir": "^0.6.0"
+  }
+}
