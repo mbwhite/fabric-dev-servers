@@ -4,7 +4,7 @@
 set -ev
 
 # Grab the current directory.
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Shut down the Docker containers for the system tests.
 cd "${DIR}"/hlfv1
