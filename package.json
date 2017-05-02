@@ -7,7 +7,7 @@
   },
   "main" : "info.js",
   "scripts": {
-    "qt": "echo $npm_package_config_fabricversion",
+    "info": "node info.js",
     "start": "echo $npm_package_config_fabricversion && ./fabric-scripts/$npm_package_config_fabricversion/start-hyperledger.sh",
     "stop": "./fabric-scripts/$npm_package_config_fabricversion/stop-hyperledger.sh",
     "teardown": "./fabric-scripts/$npm_package_config_fabricversion/teardown-hyperledger.sh",
